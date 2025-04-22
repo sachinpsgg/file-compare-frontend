@@ -9,6 +9,7 @@ export const compareFiles = async (file1, file2) => {
     });
 
     if (!response.ok) {
+        console.log(response);
         throw new Error('Network response was not ok');
     }
 
