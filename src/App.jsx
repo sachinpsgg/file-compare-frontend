@@ -48,8 +48,10 @@ function App() {
         setLoading(true);
         try {
             const data = await compareFiles(file1, file2);
+            console.log(data)
             setResult(data);
         } catch (error) {
+            console.log(error)
             setResult({ error: 'Failed to compare documents. Please try again.' });
         } finally {
             setLoading(false);
