@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Header from './components/Header';
-import FileInput from './components/FileInput';
+import FileInput from './components/FileInput.jsx';
 import ResultDisplay from './components/ResultDisplay';
 import Button from './components/Button';
 import { compareFiles } from './utils/api';
